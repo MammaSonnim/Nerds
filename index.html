@@ -126,9 +126,28 @@
         <h1 class="purpose__title">Давайте дружить, это выгодно!</h1>
         <p class="purpose__text">Скидка 10% для друзей из социальных сетей.</p>
       </section>
-    </div>
-  </footer>
-  <section class="modal modal__contact"></section>
+      </div>
+      </footer>
+      <section class="modal modal-contact">
+        <a class="modal__close modal-contact__close" href="#">Назад</a>
+        <form class="contact-form" action="/echo" method="post">
+          <div class="contact-from__content">
+            <label class="contact-form__label" for="name-field">Ваше имя:
+              <input class="contact-form__item" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+            </label>
+            <label class="contact-form__label" for="email-field">Ваш e-mail:
+              <input class="contact-form__item" type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+            </label>
+            <label class="contact-form__label" for="text-field">Текст письма:
+              <textarea class="contact-form__item text-field" name="text" rows="5" id="text-field" placeholder="В свободной форме"></textarea>
+            </label>
+          </div>
+          <div class="modal__footer">
+            <button class="modal__btn btn" type="submit" name="send">Отправить</button>
+            <button class="modal__btn modal__btn_reset" type="reset">Отмена</button>
+          </div>
+        </form>
+      </section>
 </body>
 
 </html>
