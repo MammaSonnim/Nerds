@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8">
   <title>Nerds</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
   <header class="header">
     <div class="wrapper">
-      <a href="#" class="logo"><img src="" alt=""></a>
-      <nav class="menu">
-        <a href="#" class="menu__item">Студия</a>
-        <a href="#" class="menu__item">Клиенты</a>
-        <a href="#" class="menu__item">Магазин</a>
-        <a href="#" class="menu__item">Контакты</a>
-        <a href="#" class="menu__item">Корзина</a>
-      </nav>
+      <section class="header__panel">
+        <h1 class="logo"><img src="" alt=""></h1>
+  <!--      <a href="#" class="logo"><img src="" alt=""></a>-->
+        <nav class="menu">
+          <a href="#" class="menu__item">Студия</a>
+          <a href="#" class="menu__item">Клиенты</a>
+          <a href="#" class="menu__item">Магазин</a>
+          <a href="#" class="menu__item">Контакты</a>
+          <a href="#" class="menu__item">Корзина</a>
+        </nav>
+      </section>
       <article class="slider">
-        <input class="slider__toggle slider__toggle_1" id="toggle-1" name="toggle" type="radio" checked>
-        <input class="slider__toggle slider__toggle_2" id="toggle-2" name="toggle" type="radio">
-        <input class="slider__toggle slider__toggle_3" id="toggle-3" name="toggle" type="radio">
+        <input class="slider__input slider__input_1" id="input-1" name="input" type="radio" checked>
+        <input class="slider__input slider__input_2" id="input-2" name="input" type="radio">
+        <input class="slider__input slider__input_3" id="input-3" name="input" type="radio">
         <div class="slider__inner">
           <div class="slides">
             <div class="slide">
@@ -43,9 +47,9 @@
           </div>
         </div>
         <div class="slider__controls">
-          <label class="slider__control slider__control_1" for="toggle-1"></label>
-          <label class="slider__control slider__control_2" for="toggle-2"></label>
-          <label class="slider__control slider__control_3" for="toggle-3"></label>
+          <label class="slider__control slider__control_1" for="input-1"></label>
+          <label class="slider__control slider__control_2" for="input-2"></label>
+          <label class="slider__control slider__control_3" for="input-3"></label>
         </div>
       </article>
     </div>
