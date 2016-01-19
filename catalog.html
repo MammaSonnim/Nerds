@@ -11,8 +11,7 @@
   <header class="header">
     <div class="wrapper">
       <section class="header__panel">
-        <h1 class="logo"><img src="" alt=""></h1>
-  <!--      <a href="#" class="logo"><img src="" alt=""></a>-->
+        <a href="#" class="logo"><img src="" alt=""></a>
         <nav class="menu">
           <a href="#" class="menu__item">Студия</a>
           <a href="#" class="menu__item">Клиенты</a>
@@ -24,6 +23,130 @@
     </div>
   </header>
   <main class="main wrapper">
+      <h1 class="header__title">Добро пожаловать в магазин готовых макетов</h1>
+    </div>
+  </header>
+  <main class="catalog wrapper">
+    <form class="catalog__col catalog__col_left filters" action="/echo" method="get">
+      <fieldset class="filters__item filter-price">
+        <h2 class="filters__title">Стоимость</h2>
+        <div class="filter-price__panel price-panel">
+          <div class="price-panel__scale">
+            <div class="price-panel__range" style="margin-left: 20px; width: 70%"></div>
+          </div>
+          <div class="price-panel__toggle price-panel__toggle_min"></div>
+          <div class="price-panel__toggle price-panel__toggle_max"></div>
+        </div>
+        <div class="filter-price__inputs price-inputs">
+          <!--         нужны ли будут модификаторы price-inputs__label_min в итоге? -->
+          <label class="price-inputs__label price-inputs__label_min" for="input-min">от
+            <input class="price-inputs__input price-inputs__input_min" id="input-min" type="text" value="0">
+          </label>
+          <label class="price-inputs__label price-inputs__label_max" for="input-max">до
+            <input class="price-inputs__input price-inputs__input_max" id="input-max" type="text" value="15 000">
+          </label>
+        </div>
+      </fieldset>
+      <fieldset class="filters__item filter filter-grid">
+        <h2 class="filter__title">Сетка</h2>
+        <input class="filter__radio" id="radio-1" type="radio" name="radiogroup" value="adaptive" checked>
+        <label class="filter__label" for="radio-1">Адаптивная</label>
+        <input class="filter__radio" id="radio-2" type="radio" name="radiogroup" value="fix">
+        <label class="filter__label" for="radio-2">Фиксированная</label>
+        <input class="filter__radio" id="radio-3" type="radio" name="radiogroup" value="liquid">
+        <label class="filter__label" for="radio-3">Резиновая</label>
+      </fieldset>
+      <fieldset class="filters__item filter filter_features">
+        <h2 class="filter__title">Особенности</h2>
+        <input class="filer__checkbox" id="checkbox-1" type="checkbox" name="checkbox" value="slider" checked>
+        <label class="filter__label" for="checkbox-1">Слайдер</label>
+        <input class="filer__checkbox" id="checkbox-2" type="checkbox" name="checkbox" value="features">
+        <label class="filter__label" for="checkbox-2">Блок преимуществ</label>
+        <input class="filer__checkbox" id="checkbox-3" type="checkbox" name="checkbox" value="news">
+        <label class="filter__label" for="checkbox-3">Новости</label>
+        <input class="filer__checkbox" id="checkbox-4" type="checkbox" name="checkbox" value="gallery">
+        <label class="filter__label" for="checkbox-4">Галерея</label>
+        <input class="filer__checkbox" id="checkbox-5" type="checkbox" name="checkbox" value="cart">
+        <label class="filter__label" for="checkbox-5">Корзина</label>
+      </fieldset>
+      <button class="filters__item btn btn_catalog">Показать</button>
+    </form>
+    <section class="catalog__col catalog__col_right gallery">
+      <div class="gallery__sort sort">
+        <div class="sort__list">
+          <p class="sort__title">Сортировать:</p>
+          <a href="#" class="sort__item">По цене</a>
+          <a href="#" class="sort__item">По типу</a>
+          <a href="#" class="sort__item">По функционалу</a>
+        </div>
+        <div class="sort__direction direction">
+          <a class="direction__item direction__item_up direction__item_active" href="#">Вверх</a>
+          <a class="direction__item direction__item_down" href="#">Вниз</a>
+        </div>
+      </div>
+      <section class="gallery__list">
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Aviator</h2>
+            <p class="card__text">Одностраничный макет с авторским дизайном</p>
+            <a href="#" class="card__price">8000 р.</a>
+          </div>
+        </article>
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Forte</h2>
+            <p class="card__text">Интернет-магазин с личным кабинетом</p>
+            <a href="#" class="card__price">10000 р.</a>
+          </div>
+        </article>
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Forte</h2>
+            <p class="card__text">Отличный макет для личного блога</p>
+            <a href="#" class="card__price">5000 р.</a>
+          </div>
+        </article>
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Modern Organic Thai</h2>
+            <p class="card__text">Сайт для ресторана быстрого питания</p>
+            <a href="#" class="card__price">12000 р.</a>
+          </div>
+        </article>
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Avenue</h2>
+            <p class="card__text">Макет для блога о путешествиях</p>
+            <a href="#" class="card__price">8000 р.</a>
+          </div>
+        </article>
+        <article class="gallery__item card">
+          <div class="card__header"></div>
+          <img src="#" alt="Превью сайта" class="card__img">
+          <div class="card__descr">
+            <h2 class="card__title">Dovetail</h2>
+            <p class="card__text">Интернет-магазин с галереей товаров</p>
+            <a href="#" class="card__price">14000 р.</a>
+          </div>
+        </article>
+      </section>
+      <section class="gallery__paginator paginator">
+        <span class="paginator__btn paginator__btn_current" href="#">1</span>
+        <a class="paginator__btn" href="#">2</a>
+        <a class="paginator__btn" href="#">3</a>
+        <a class="paginator__btn btn btn_catalog" href="#">Следующая</a>
+      </section>
+    </section>
   </main>
   <footer class="footer">
     <section class="map">
@@ -46,28 +169,28 @@
         <h1 class="purpose__title">Давайте дружить, это выгодно!</h1>
         <p class="purpose__text">Скидка 10% для друзей из социальных сетей.</p>
       </section>
+    </div>
+  </footer>
+  <section class="modal modal-contact">
+    <a class="modal__close modal-contact__close" href="#">Назад</a>
+    <form class="contact-form" action="/echo" method="post">
+      <div class="contact-from__content">
+        <label class="contact-form__label" for="name-field">Ваше имя:
+          <input class="contact-form__item" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
+        </label>
+        <label class="contact-form__label" for="email-field">Ваш e-mail:
+          <input class="contact-form__item" type="email" name="email" id="email-field" placeholder="Для отправки ответа">
+        </label>
+        <label class="contact-form__label" for="text-field">Текст письма:
+          <textarea class="contact-form__item text-field" name="text" rows="5" id="text-field" placeholder="В свободной форме"></textarea>
+        </label>
       </div>
-      </footer>
-      <section class="modal modal-contact">
-        <a class="modal__close modal-contact__close" href="#">Назад</a>
-        <form class="contact-form" action="/echo" method="post">
-          <div class="contact-from__content">
-            <label class="contact-form__label" for="name-field">Ваше имя:
-              <input class="contact-form__item" type="text" name="name" id="name-field" placeholder="Представьтесь, пожалуйста">
-            </label>
-            <label class="contact-form__label" for="email-field">Ваш e-mail:
-              <input class="contact-form__item" type="email" name="email" id="email-field" placeholder="Для отправки ответа">
-            </label>
-            <label class="contact-form__label" for="text-field">Текст письма:
-              <textarea class="contact-form__item text-field" name="text" rows="5" id="text-field" placeholder="В свободной форме"></textarea>
-            </label>
-          </div>
-          <div class="modal__footer">
-            <button class="modal__btn btn" type="submit" name="send">Отправить</button>
-            <button class="modal__btn modal__btn_reset" type="reset">Отмена</button>
-          </div>
-        </form>
-      </section>
+      <div class="modal__footer">
+        <button class="modal__btn btn" type="submit" name="send">Отправить</button>
+        <button class="modal__btn modal__btn_reset" type="reset">Отмена</button>
+      </div>
+    </form>
+  </section>
 </body>
 
 </html>
